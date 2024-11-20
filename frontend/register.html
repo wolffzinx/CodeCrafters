@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro - Codecrafters</title>
+    <link rel="stylesheet" href="css/style.css"> <!-- Ajuste para o caminho correto -->
+</head>
+
+<body>
+    <h1>Registrar Novo Usuário</h1>
+    <form id="registerForm">
+        <input type="text" id="username" placeholder="Nome de usuário" required>
+        <input type="password" id="password" placeholder="Senha" required>
+        <select id="role" required>
+            <option value="" disabled selected>Selecione o papel</option>
+            <option value="student">Estudante</option>
+            <option value="teacher">Professor</option>
+        </select>
+        <input type="url" id="profilePicture" placeholder="URL da imagem de perfil (opcional)">
+        <button type="submit">Registrar</button>
+    </form>
+
+    <p>Já possui uma conta? <a href="login.html">Faça login aqui</a></p>
+
+    <script src="js/script.js" defer></script> <!-- Ajuste para o caminho correto -->
+</body>
+
+</html>

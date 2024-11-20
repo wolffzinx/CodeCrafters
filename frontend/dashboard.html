@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Dashboard</title>
+</head>
+<body>
+    <h1>Dashboard</h1>
+
+    <div id="teacherSection" style="display:none;">
+        <h2>Criar Sala</h2>
+        <form id="createClassForm">
+            <input type="text" id="classCode" placeholder="Código da Sala" required>
+            <input type="text" id="subject" placeholder="Linguagem" required>
+            <textarea id="questions" placeholder="Digite as perguntas (uma por linha)"></textarea>
+            <button type="submit">Criar Sala</button>
+        </form>
+        
+        <h2>Minhas Salas</h2>
+        <div id="classList"></div>
+    </div>
+
+    <div id="studentSection" style="display:none;">
+        <h2>Entrar na Sala</h2>
+        <input type="text" id="joinClassCode" placeholder="Código da Sala" required>
+        <button id="joinClassButton">Entrar</button>
+
+        <h2>Salas Participantes</h2>
+        <div id="joinedClasses"></div>
+    </div>
+
+    <div id="message"></div>
+    
+    <script src="js/dashboard.js"></script>
+</body>
+</html>
